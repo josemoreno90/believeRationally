@@ -1,0 +1,24 @@
+{
+  "name": "believe-rationally",
+  "version": "1.0.0",
+  "description": "Site That Utilizes Youtube Channel Data to Create Free Coding Lessons.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josemoreno90/believeRationally.git"
+  },
+  "author": "Jose Moreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josemoreno90/believeRationally/issues"
+  },
+  "homepage": "https://github.com/josemoreno90/believeRationally#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
