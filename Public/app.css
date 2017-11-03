@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
+  color: white;
 }
 
 body {
   margin: 0;
   font-weight: 800;
   font-family: 'HelveticaNeue';
+  background-color: black;
 }
 
 section {
@@ -21,7 +23,7 @@ section {
 }
 
 .intro {
-  height: 105vh;
+  height: 111vh;
   text-align: center;
   font-size: 2rem;
 }

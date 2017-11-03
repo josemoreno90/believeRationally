@@ -1,4 +1,11 @@
 <% include partials/header %>
-
+<div class="container">
+  <h1>Sections</h1>
+      <% videos.forEach(function(video){ %>
+        <ul>
+          <li> <%= video.title  %> </li>
+        </ul>
+      <% }) %>
+    </div>
 
 <% include partials/footer %>
