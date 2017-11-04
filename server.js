@@ -15,15 +15,14 @@ app.get('/about', (req,res) => {
 })
 
 app.get('/sections', (req,res) => {
-  apiFunctions.fetchPlaylist("PLF4Fpfzm6Ig3ABrbp1sNkvkPBS_KDkeIN").then(function(playlist) {
-      playlist.getVideos().then(function(videos){
-        res.render('sections', {videos})
-       })
-    })
-  // apiFunctions.fetchChannel("UCQsneWfl8r0lV3evE7W9o3Q").then(function(playlists) {
-  //       res.render('sections', {playlists})
+  // apiFunctions.fetchPlaylist("PLF4Fpfzm6Ig3ABrbp1sNkvkPBS_KDkeIN").then(function(playlist) {
+  //     playlist.getVideos().then(function(videos){
+  //       res.render('sections', {videos})
+  //      })
   //   })
-
+  apiFunctions.fetchPlaylist().then(function(playlists) {
+        res.render('sections', {playlists})
+    })
 
 })
 

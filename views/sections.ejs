@@ -1,11 +1,13 @@
 <% include partials/header %>
 <div class="container">
   <h1>Sections</h1>
-      <% videos.forEach(function(video){ %>
-        <ul>
-          <li> <%= video.title  %> </li>
-        </ul>
-      <% }) %>
+        <% playlists.items.forEach(function(item){  %>
+        <h2> <%= item.snippet.title %> </h2>
+        <% console.log(item.snippet.thumbnails.url) %>
+        <img src= '<%= item.snippet.thumbnails.default.url %>' class='thumbnail' >
+
+        <% }); %>
+
     </div>
 
 <% include partials/footer %>
