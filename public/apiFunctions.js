@@ -8,6 +8,6 @@ module.exports = {
     return youtube.request('playlists', queryString)
   },
   fetchPlaylistVids: (myPlaylistId) => {
-    return youtube.getPlaylistByID(myChannelId)
+    return youtube.getPlaylistByID(myPlaylistId)
   }
 }
