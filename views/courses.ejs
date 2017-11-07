@@ -1,0 +1,20 @@
+<% include partials/header %>
+<div class="container">
+  <h1>Courses</h1>
+        <% playlists.forEach(function(playlist){  %>
+          <% if(playlist.title !='Study Beats, Programming Instrumentals') { %>
+            <div class='playlistDiv'%>
+              <h2 class='titleText'> <a href='/lesson/<%=playlist.playlistId%>'> <%= playlist.title %> </h2>
+              <img src= '<%= playlist.thumbnail %>' width='15%' height='15%' class='img-responsive center' > </a>
+              <p class='descriptionText'> <%= playlist.description %>
+            </div>
+            <ul>
+              <li></li>
+            </ul>
+
+          <% } %>
+        <% }); %>
+
+    </div>
+
+<% include partials/footer %>

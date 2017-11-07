@@ -14,20 +14,15 @@ app.get('/about', (req,res) => {
   res.render("about")
 })
 
-app.get('/sections', (req,res) => {
-  // apiFunctions.fetchPlaylist("PLF4Fpfzm6Ig3ABrbp1sNkvkPBS_KDkeIN").then(function(playlist) {
-  //     playlist.getVideos().then(function(videos){
-  //       res.render('sections', {videos})
-  //      })
-  //   })
-  apiFunctions.fetchPlaylist().then(function(playlists) {
-        res.render('sections', {playlists})
-    })
-
+app.get('/courses', (req,res) => {
+  apiFunctions.fetchEverything().then((playlists) => {
+    res.render('courses', {playlists})
+  });
 })
 
 app.get('/sections/:lesson', (req,res) => {
-  const id = parseInt(req.params.id);
+  const lesson = req.params.id;
+
 
   res.render("lesson")
 })
