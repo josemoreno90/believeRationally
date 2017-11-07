@@ -1,6 +1,20 @@
 <% include partials/header %>
+<div class="container">
 
+<div class='playlistDiv'>
 
-
-
+        <% playlists.forEach(function(playlist){  %>
+              <% if(playlist.playlistId === lesson ) { %>
+                <h2> <%= playlist.title %> </h2>
+                <img src= '<%= playlist.thumbnail %>' class='center-block' width='45%'height='auto' >
+              <p class='descriptionText'> <%= playlist.description %> </p>
+                <% for(let i = 0; i < playlist.videos.length; i++)  { %>
+                    <h3 class= 'videoTitle'>
+                      <%=  playlist.videos[i].title %>
+                    </h3>
+                <% } %>
+              <% } %>
+        <% }); %>
+    </div>
+  </div>
 <% include partials/footer %>

@@ -24,7 +24,7 @@ section {
 }
 
 .intro {
-  height: 111vh;
+  height: 100vh;
   text-align: center;
   font-size: 2.5rem;
 }
@@ -49,7 +49,7 @@ h6 {
 
 
 p {
-  font-size: 1.5em;
+  font-size: 2.5em;
   font-weight: 500;
   color:white;
 }
@@ -60,19 +60,36 @@ a {
 }
 
 .anchorHot {
-  font-size: 1.75rem;
   color: #ff69b4;
 }
 
 
 .playlistDiv {
-  font-size: 2.1rem;
+  font-size: 3.1rem;
   padding: 1.5% 1.5%;
   width:100%;
   height:auto;
-  border: dashed 1.1px red;
+  /*border: dashed 1.1px red;*/
 }
 
 .descriptionText {
-  font-size: 1.7rem;
+  font-size: 2rem;
+}
+
+.videoTitle {
+  font-size: 1.75rem;
+  color: yellow;
+}
+img {
+  display: inline;
+  padding: 1%;
+  margin: 0;
+}
+
+li {
+  font-size: 1.85em;
+}
+
+.container {
+  width: 98%;
 }

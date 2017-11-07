@@ -26,7 +26,8 @@ module.exports = {
               videoId: video.id ,
               description: video.description,
               thumbnail: video.thumbnails.medium.url,
-              title: video.title            
+              title: video.title
+
             }))
           }))
         })

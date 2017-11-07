@@ -10,22 +10,25 @@ app.get('/', (req,res) => {
   res.render("index")
 })
 
-app.get('/about', (req,res) => {
-  res.render("about")
-})
-
 app.get('/courses', (req,res) => {
   apiFunctions.fetchEverything().then((playlists) => {
     res.render('courses', {playlists})
   });
 })
 
-app.get('/sections/:lesson', (req,res) => {
-  const lesson = req.params.id;
-
-
-  res.render("lesson")
+app.get('/courses/:playlistId', (req,res) => {
+  const lesson = req.params.playlistId;
+  apiFunctions.fetchEverything().then((playlists) => {
+    res.render('lesson', {playlists, lesson})
+  });
 })
+
+app.get('/about', (req,res) => {
+  res.render("about")
+})
+
+
+
 
 
 app.listen(3000, () => {
