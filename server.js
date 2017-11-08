@@ -16,10 +16,18 @@ app.get('/courses', (req,res) => {
   });
 })
 
-app.get('/courses/:playlistId', (req,res) => {
-  const lesson = req.params.playlistId;
+app.get('/courses/:playlistTitle', (req,res) => {
+  const playlistTitle = req.params.playlistTitle;
   apiFunctions.fetchEverything().then((playlists) => {
-    res.render('lesson', {playlists, lesson})
+    res.render('lessons', {playlists, playlistTitle})
+  });
+})
+
+app.get('/courses/:playlistTitle/:videoTitle', (req,res) => {
+  const playlistTitle = req.params.playlistTitle;
+  const videoTitle = req.params.videoTitle
+  apiFunctions.fetchEverything().then((playlists) => {
+    res.render('lesson', {playlists, playlistTitle, videoTitle})
   });
 })
 
