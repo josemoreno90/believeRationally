@@ -98,7 +98,7 @@ li {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 5%;
+  width: 6%;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -140,4 +140,14 @@ li {
   background-color: yellow;
   padding: 5px;
   margin: 5px;
+}
+
+.social-right {
+  float:right;
+}
+
+.socialDiv {
+  padding: 1 1;
+  width:90%;
+  height:auto;
 }
