@@ -8,6 +8,7 @@
                 <h2> <%= playlist.title %> </h2>
                 <img src= '<%= playlist.thumbnail %>' class='center-block' width='45%'height='auto' >
               <p class='descriptionText'> <%= playlist.description %> </p>
+              <h2>Lessons:</h2>
                 <% for(let i = 0; i < playlist.videos.length; i++)  { %>
                     <h3 class= 'videoTitle'>
                       <a href='/courses/<%=playlist.title.replace(/[, ]/g,'')%>/<%=playlist.videos[i].title.replace(/[, ]/g,'')%>'> <%=  playlist.videos[i].title %> </a>
