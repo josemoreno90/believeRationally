@@ -5,7 +5,7 @@
         <% playlists.forEach(function(playlist){  %>
           <% if(playlist.title !='Study Beats, Programming Instrumentals') { %>
               <h2> <a href='/courses/<%=playlist.title.replace(/[, ]/g,'')%>'> <%= playlist.title %> </h2>
-              <img src= '<%= playlist.thumbnail %>' width='15%' height='15%' class='img-responsive center' > </a>
+              <img src= '<%= playlist.thumbnail %>' width='30%' height='30%' class='img-responsive center' > </a>
               <p class='descriptionText'> <%= playlist.description %> </p>
             <% } %>
         <% }); %>
