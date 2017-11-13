@@ -31,6 +31,10 @@ app.get('/courses/:playlistTitle/:videoTitle', (req,res) => {
   });
 })
 
+app.get('/shop', (req,res) => {
+  res.render("shop")
+})
+
 app.get('/about', (req,res) => {
   res.render("about")
 })
