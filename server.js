@@ -25,11 +25,12 @@ app.get('/courses/:playlistTitle', (req,res) => {
 
 app.get('/courses/:playlistTitle/:videoTitle', (req,res) => {
   const playlistTitle = req.params.playlistTitle;
-  const videoTitle = req.params.videoTitle
-  apiFunctions.fetchEverything().then((playlists) => {
+  const videoTitle = req.params.videoTitle;
+  apiFunctions.fetchEverything().then(playlists => {
     res.render('lesson', {playlists, playlistTitle, videoTitle})
-  });
+  })
 })
+
 
 app.get('/shop', (req,res) => {
   res.render("shop")
