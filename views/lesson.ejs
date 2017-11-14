@@ -3,19 +3,25 @@
   <h1>Lesson<h1>
   <div class='playlistDiv'>
 
-    <% playlists.forEach(function(playlist){ %>
-      <% for(let i=0; i< playlist.videos.length; i++) { %>
-        <% if(playlist.videos[i].title.replace(/[, ]/g,'') === videoTitle) {  %>
-          <h2> <%= playlist.videos[i].title %> </h2>
+    <% for(let i=0; i< playlists.length; i++) { %>
+      <% for(let j=0; j < playlists[i].videos.length; j++) { %>
+        <% if(playlists[i].videos[j].title.replace(/[, ]/g,'') === videoTitle) {  %>
+          <h2> <%= playlists[i].videos[j].title %> </h2>
           <div class="intrinsic-container intrinsic-container-16x9">
-            <iframe src="https://www.youtube.com/embed/<%= playlist.videos[i].videoId %>" frameborder="0" allowfullscreen align="middle"></iframe>
+            <iframe src="https://www.youtube.com/embed/<%= playlists[i].videos[j].videoId %>" frameborder="0" allowfullscreen align="middle"></iframe>
           </div>
           <h3>Lesson Summary</h3>
           <div class='breakLine'></div>
-          <p> <%= playlist.videos[i].description %> </p>
+          <p> <%= playlists[i].videos[j].description %> </p>
+
+          <% if(playlists[i].videos[j].title != playlists[i].videos[0].title){ %>
+            <a href="/courses/<%= playlistTitle %>/<%= playlists[i].videos[j-1].title.replace(/[, ]/g,'')%>"><input class='btn btn-lg btn-primary' type='button' value='previous'></a>
+          <% } %>
+
+
         <% } %>
-      <%  } %>
-    <% }) %>
+      <% } %>
+    <% } %>
 
 
 
