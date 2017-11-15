@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   margin: 0;
@@ -13,13 +11,12 @@ body {
 
 section {
   width: 100%;
-  padding: 0 7%;
+  padding: 0 2%;
   display: table;
-  margin: -5% 0%;
+  margin: -2% 0%;
   max-width: none;
   background-color: #373B44;
   height: 10vh;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Black_Hole_in_the_universe.jpg/1024px-Black_Hole_in_the_universe.jpg');
   background-size: cover;
 }
 
@@ -27,6 +24,20 @@ section {
   height: 100vh;
   text-align: center;
   font-size: 2.0rem;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Black_Hole_in_the_universe.jpg/1024px-Black_Hole_in_the_universe.jpg');
+}
+
+.about {
+  height: 100vh;
+  text-align: center;
+  font-size: 2.0rem;
+  background-image: url('https://static.pexels.com/photos/577585/pexels-photo-577585.jpeg');
+}
+
+.about-content {
+  height: 20vh;
+  text-align: center;
+  background-color: grey;
 }
 
 .content {
