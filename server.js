@@ -33,11 +33,17 @@ app.get('/courses/:playlistTitle/:videoTitle', (req,res) => {
 
 
 app.get('/shop', (req,res) => {
-  res.render("shop")
+  apiFunctions.fetchEverything().then(playlists => {
+    res.render('shop', {playlists})
+  })
 })
 
 app.get('/about', (req,res) => {
   res.render("about")
+})
+
+app.get('/sold-out', (req,res) => {
+  res.send("<h2>Sorry This item is sold out!</h2>")
 })
 
 
