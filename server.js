@@ -43,7 +43,14 @@ app.get('/about', (req,res) => {
 })
 
 app.get('/sold-out', (req,res) => {
-  res.send("<h2>Sorry This item is sold out!</h2>")
+  const goBack = function() {
+    window.history.back();
+  }
+  res.send("<h2>Sorry This item is sold out!</h2><a href='https://shrouded-bayou-12615.herokuapp.com/shop'><button>Back to Shop Page</button></a> ")
+})
+
+app.get('/order-success', (req,res) => {
+  res.send("<h2>Your order was successfull</h2><a href='https://shrouded-bayou-12615.herokuapp.com/#about'><button>To courses page</button></a>")
 })
 
 
