@@ -191,3 +191,8 @@ li {
 .jumbotron {
   background-color: #3eb302
 }
+
+.paypallForm {
+display: block;
+margin: 0 auto;
+}
