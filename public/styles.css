@@ -31,7 +31,7 @@ section {
   height: 100vh;
   text-align: center;
   font-size: 2.0rem;
-  background-image: url('https://static.pexels.com/photos/577585/pexels-photo-577585.jpeg');
+  background-image: url('http://www.publicdomainpictures.net/pictures/60000/nahled/abstract-wavy-lines-black.jpg');
 }
 
 .about-content {
@@ -189,10 +189,23 @@ li {
 }
 
 .jumbotron {
-  background-color: #3eb302
+  background-color: black;
+  width:100%;
+  height:auto;
 }
 
 .paypallForm {
 display: block;
 margin: 0 auto;
+}
+
+.linkStyle {
+  text-align: center;
+}
+
+.indexCoursesText {
+  background-color: black;
+  padding: 20px;
+  font-family: Oswald;
+  font-size: 4rem;
 }
