@@ -2,9 +2,28 @@ const express = require('express');
 const app = express();
 const apiFunctions = require('./public/apiFunctions');
 
+var sm = require('sitemap')
+// Creates a sitemap object given the input configuration with URLs
+var sitemap = sm.createSitemap ({
+      hostname: 'https://shrouded-bayou-12615.herokuapp.com',
+      cacheTime: 600000        // 600 sec - cache purge period
+    });
 
+app.get('/sitemap.xml', function(req, res) {
+  sitemap.toXML( function (err, xml) {
+      if (err) {
+        return res.status(500).end();
+      }
+      res.header('Content-Type', 'application/xml');
+      res.send( xml );
+  });
+});
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
+
+app.get('/sitemap.xml', (req, res) => {
+  res.render('/sitemap.xml')
+})
 
 app.get('/', (req,res) => {
   res.render("index")
