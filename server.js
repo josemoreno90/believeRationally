@@ -53,6 +53,10 @@ app.get('/order-success', (req,res) => {
   res.send("<h2>Your order was successfull</h2><a href='https://shrouded-bayou-12615.herokuapp.com/#about'><button>To courses page</button></a>")
 })
 
+app.get('/google4804797dbfb80ca3.html', (req,res) => {
+  res.render('google4804797dbfb80ca3.ejs')
+})
+
 
 
 
