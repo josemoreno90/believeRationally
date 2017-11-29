@@ -21,10 +21,6 @@ app.get('/sitemap.xml', function(req, res) {
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
-app.get('/sitemap.xml', (req, res) => {
-  res.render('/sitemap.xml')
-})
-
 app.get('/', (req,res) => {
   res.render("index")
 })
