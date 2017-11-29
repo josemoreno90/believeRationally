@@ -9,6 +9,9 @@ var sitemap = sm.createSitemap ({
       cacheTime: 600000        // 600 sec - cache purge period
     });
 
+app.use(express.static('public'))
+app.set('view engine', 'ejs')
+
 app.get('/sitemap.xml', function(req, res) {
   sitemap.toXML( function (err, xml) {
       if (err) {
@@ -18,8 +21,6 @@ app.get('/sitemap.xml', function(req, res) {
       res.send( xml );
   });
 });
-app.use(express.static('public'))
-app.set('view engine', 'ejs')
 
 app.get('/', (req,res) => {
   res.render("index")
