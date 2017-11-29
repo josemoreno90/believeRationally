@@ -5,12 +5,12 @@ const apiFunctions = require('./public/apiFunctions');
 var sm = require('sitemap')
 // Creates a sitemap object given the input configuration with URLs
 var sitemap = sm.createSitemap ({
-  hostname: 'http://example.com',
+  hostname: 'https://shrouded-bayou-12615.herokuapp.com/',
   cacheTime: 600000,        // 600 sec - cache purge period
   urls: [
-    { url: '/page-1/',  changefreq: 'daily', priority: 0.3 },
-    { url: '/page-2/',  changefreq: 'monthly',  priority: 0.7 },
-    { url: '/page-3/' }     // changefreq: 'weekly',  priority: 0.5
+    { url: '/courses/',  changefreq: 'daily', priority: 0.3 },
+    { url: '/lessons/',  changefreq: 'monthly',  priority: 0.7 },
+    { url: '/lesson/' }     // changefreq: 'weekly',  priority: 0.5
   ]
 });
 
