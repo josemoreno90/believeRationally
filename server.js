@@ -1,9 +1,7 @@
-const sslRedirect = require('heroku-ssl-redirect');
 const express = require('express');
 const app = express();
 const apiFunctions = require('./public/apiFunctions');
 
-app.use(sslRedirect());
 
 app.configure('production', => {
   app.use((req, res, next) => {
