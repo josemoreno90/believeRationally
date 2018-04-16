@@ -1,16 +1,9 @@
+const sslRedirect = require('heroku-ssl-redirect');
 const express = require('express');
 const app = express();
 const apiFunctions = require('./public/apiFunctions');
 
-
-app.configure('production', => {
-  app.use((req, res, next) => {
-    if (req.header 'x-forwarded-proto' !== 'https')
-      res.redirect(`https://${req.header('host')}${req.url}`)
-    else
-      next()
-  })
-})
+app.use(sslRedirect());
 
 var sm = require('sitemap')
 // Creates a sitemap object given the input configuration with URLs
