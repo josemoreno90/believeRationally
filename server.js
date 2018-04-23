@@ -5,12 +5,14 @@ const apiFunctions = require('./public/apiFunctions');
 
 app.use(sslRedirect());
 
+var sitemap = require('express-sitemap')();
+
+var app = require('express')();
+
+sitemap.generate(app);
+
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
-
-app.get('/sitemap', function(req, res) {
-  res.render("sitemap")
-});
 
 app.get('/', (req,res) => {
   res.render("index")
