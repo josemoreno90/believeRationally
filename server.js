@@ -5,29 +5,11 @@ const apiFunctions = require('./public/apiFunctions');
 
 app.use(sslRedirect());
 
-var sm = require('sitemap')
-// Creates a sitemap object given the input configuration with URLs
-var sitemap = sm.createSitemap ({
-  hostname: 'https://shrouded-bayou-12615.herokuapp.com/',
-  cacheTime: 600000,        // 600 sec - cache purge period
-  urls: [
-    { url: '/courses/',  changefreq: 'daily', priority: 0.3 },
-    { url: '/lessons/',  changefreq: 'monthly',  priority: 0.7 },
-    { url: '/lesson/' }     // changefreq: 'weekly',  priority: 0.5
-  ]
-});
-
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
 app.get('/sitemap.xml', function(req, res) {
-  sitemap.toXML( function (err, xml) {
-      if (err) {
-        return res.status(500).end();
-      }
-      res.header('Content-Type', 'application/xml');
-      res.send( xml );
-  });
+  res.render("sitemap.xml")
 });
 
 app.get('/', (req,res) => {
