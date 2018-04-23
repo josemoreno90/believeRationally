@@ -7,8 +7,6 @@ app.use(sslRedirect());
 
 var sitemap = require('express-sitemap')();
 
-var app = require('express')();
-
 sitemap.generate(app);
 
 app.use(express.static('public'))
