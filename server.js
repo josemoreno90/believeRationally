@@ -1,6 +1,11 @@
+var sitemaps = require('express-sitemap')();
+
 const express = require('express');
 const app = express();
 const apiFunctions = require('./public/apiFunctions');
+
+sitemaps.generate(app);
+
 
 var sm = require('sitemap')
 // Creates a sitemap object given the input configuration with URLs
