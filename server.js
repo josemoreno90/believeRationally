@@ -8,8 +8,8 @@ app.use(sslRedirect());
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
-app.get('/sitemap.xml', function(req, res) {
-  res.render("sitemap.xml")
+app.get('/sitemap', function(req, res) {
+  res.render("sitemap")
 });
 
 app.get('/', (req,res) => {
