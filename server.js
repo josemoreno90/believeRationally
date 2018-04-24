@@ -2,12 +2,14 @@ const express = require('express');
 const app = express();
 const apiFunctions = require('./public/apiFunctions');
 
+var path = require("path");
+
+
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
-app.get('/sitemap.xml', function(req, res) {
-  res.setHeader('content-type', 'text/xml');
-  app.render("sitemap");
+router.get('/sitemap.xml', function(req, res) {
+  res.sendFile(path.join(__dirname, 'path', 'sitemap.xml'));
 });
 
 app.get('/', (req,res) => {
