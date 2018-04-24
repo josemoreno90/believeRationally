@@ -18,7 +18,14 @@ var sitemap = sm.createSitemap ({
     { url: '/courses/freeCodeCampReviewhtml&css',  changefreq: 'daily', priority: 0.3 },
     { url: '/courses/ResponsiveDesignwithBootstrapfreeCodeCampreview',  changefreq: 'daily', priority: 0.3 },
     { url: '/courses/LearnResponsiveDesignCodecademyWebDevTutorials',  changefreq: 'daily', priority: 0.3 },
-    { url: '/courses/LearnHTML&CSSIn2Hours&CSSFrameworkBootstrap',  changefreq: 'daily', priority: 0.3 }
+    { url: '/courses/LearnCSSCodecademy',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/LearnSQLCodecademy',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/HowToUseAPIswithJavaScript',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/LearnHTML&CSSIn2Hours&CSSFrameworkBootstrap',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/ObjectOrientedandFunctionalProgramming',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/JSONAPIsandAJAX',  changefreq: 'daily', priority: 0.3 }
+
+
   ]
 });
 
