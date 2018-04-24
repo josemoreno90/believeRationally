@@ -11,8 +11,14 @@ var sitemap = sm.createSitemap ({
   cacheTime: 600000,        // 600 sec - cache purge period
   urls: [
     { url: '/courses/',  changefreq: 'daily', priority: 0.3 },
-    { url: '/lessons/',  changefreq: 'monthly',  priority: 0.7 },
-    { url: '/lesson/' }     // changefreq: 'weekly',  priority: 0.5
+    { url: '/courses/CryptoZombiesTutorial(IntrotoSolidity)', priority: 0.3 },     // changefreq: 'weekly',  priority: 0.5
+    { url: '/courses/AprendeelHTMLyCSS2018enCodecademy',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/LearnJavaOnCodecademy',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/NodejsExpressTutorial',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/freeCodeCampReviewhtml&css',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/ResponsiveDesignwithBootstrapfreeCodeCampreview',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/LearnResponsiveDesignCodecademyWebDevTutorials',  changefreq: 'daily', priority: 0.3 },
+    { url: '/courses/LearnHTML&CSSIn2Hours&CSSFrameworkBootstrap',  changefreq: 'daily', priority: 0.3 }
   ]
 });
 
