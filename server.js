@@ -6,6 +6,7 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
 app.get('/sitemap.xml', function(req, res) {
+  res.setHeader('content-type', 'text/xml');
   app.render("sitemap");
 });
 
