@@ -7,7 +7,8 @@ const apiFunctions = require('./public/apiFunctions');
 var sm = require('sitemap')
 // Creates a sitemap object given the input configuration with URLs
 var sitemap = sm.createSitemap ({
-  url: 'https://wewillcode.com',
+  const url = "https://wewillcode.com"
+  hostname: 'https://shrouded-bayou-12615.herokuapp.com/',
   cacheTime: 600000,        // 600 sec - cache purge period
   urls: [
     { url: '/courses/',  changefreq: 'daily', priority: 0.3 },
