@@ -2,15 +2,8 @@ const express = require('express');
 const app = express();
 const apiFunctions = require('./public/apiFunctions');
 
-var path = require("path");
-
-
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
-
-router.get('/sitemap.xml', function(req, res) {
-  res.sendFile(path.join(__dirname, 'path', 'sitemap.ejs'));
-});
 
 app.get('/', (req,res) => {
   res.render("index")
