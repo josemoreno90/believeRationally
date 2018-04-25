@@ -68,26 +68,26 @@ app.get('/courses/:playlistTitle/:videoTitle', (req,res) => {
 })
 
 
-app.get('/shop', (req,res) => {
-  apiFunctions.fetchEverything().then(playlists => {
-    res.render('shop', {playlists})
-  })
-})
+// app.get('/shop', (req,res) => {
+//   apiFunctions.fetchEverything().then(playlists => {
+//     res.render('shop', {playlists})
+//   })
+// })
 
 app.get('/about', (req,res) => {
   res.render("about")
 })
-
-app.get('/sold-out', (req,res) => {
-  const goBack = function() {
-    window.history.back();
-  }
-  res.send("<h2>Sorry This item is sold out!</h2><a href='https://shrouded-bayou-12615.herokuapp.com/shop'><button>Back to Shop Page</button></a> ")
-})
-
-app.get('/order-success', (req,res) => {
-  res.send("<h2>Your order was successfull</h2><a href='https://shrouded-bayou-12615.herokuapp.com/#about'><button>To courses page</button></a>")
-})
+//
+// app.get('/sold-out', (req,res) => {
+//   const goBack = function() {
+//     window.history.back();
+//   }
+//   res.send("<h2>Sorry This item is sold out!</h2><a href='https://shrouded-bayou-12615.herokuapp.com/shop'><button>Back to Shop Page</button></a> ")
+// })
+//
+// app.get('/order-success', (req,res) => {
+//   res.send("<h2>Your order was successfull</h2><a href='https://shrouded-bayou-12615.herokuapp.com/#about'><button>To courses page</button></a>")
+// })
 
 app.get('/google4804797dbfb80ca3.html', (req,res) => {
   res.render('google4804797dbfb80ca3.ejs')

@@ -46,7 +46,7 @@ section {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   display: block;
   color: white;
   font-weight: 300;
@@ -208,4 +208,8 @@ margin: 0 auto;
   padding: 20px;
   font-family: Oswald;
   font-size: 4rem;
+}
+
+.container {
+  margin: auto 0;
 }
