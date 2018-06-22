@@ -57,19 +57,21 @@ app.get('/courses', (req,res) => {
 })
 
 app.get('/courses/:playlistTitle', (req,res) => {
+  const theUrl = req.url;
   const videoTitle = req.params.videoTitle;
   const playlistTitle = req.params.playlistTitle;
   apiFunctions.fetchEverything().then((playlists) => {
-    res.render('lessons', {playlists, playlistTitle, videoTitle})
+    res.render('lessons', {playlists, playlistTitle, videoTitle, theUrl})
   });
 })
 
 app.get('/courses/:playlistTitle/:videoTitle', (req,res) => {
+  const theUrl = req.url;
   const playlistTitle = req.params.playlistTitle;
   const videoTitle = req.params.videoTitle;
   apiFunctions.fetchEverything().then(playlists => {
 
-    res.render('lesson', {playlists, playlistTitle, videoTitle})
+    res.render('lesson', {playlists, playlistTitle, videoTitle, theUrl})
   })
 })
 
