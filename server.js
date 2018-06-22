@@ -49,15 +49,18 @@ app.get('/', (req,res) => {
 })
 
 app.get('/courses', (req,res) => {
+  const playlistTitle = req.params.playlistTitle;
+  const videoTitle = req.params.videoTitle;
   apiFunctions.fetchEverything().then((playlists) => {
-    res.render('courses', {playlists})
+    res.render('courses', {playlists, playlistTitle, videoTitle})
   });
 })
 
 app.get('/courses/:playlistTitle', (req,res) => {
+  const videoTitle = req.params.videoTitle;
   const playlistTitle = req.params.playlistTitle;
   apiFunctions.fetchEverything().then((playlists) => {
-    res.render('lessons', {playlists, playlistTitle})
+    res.render('lessons', {playlists, playlistTitle, videoTitle})
   });
 })
 
@@ -65,6 +68,7 @@ app.get('/courses/:playlistTitle/:videoTitle', (req,res) => {
   const playlistTitle = req.params.playlistTitle;
   const videoTitle = req.params.videoTitle;
   apiFunctions.fetchEverything().then(playlists => {
+
     res.render('lesson', {playlists, playlistTitle, videoTitle})
   })
 })
