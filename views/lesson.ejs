@@ -18,7 +18,7 @@
 
           <% if(playlists[i].videos[j].title == playlists[i].videos[0].title){ %>
             <%=console.log(playlists[i].videos[j + 1])%>
-            <a href="/courses/<%= playlistTitle %>/<%= playlists[i].videos[j].title.replace(/[, ]/g,'')%>"><input class='btn btn-lg btn-primary' type='button' value='next'></a>
+            <a href="/courses/<%= playlistTitle %>/<%= playlists[i].videos[j + 1].title.replace(/[, ]/g,'')%>"><input class='btn btn-lg btn-primary' type='button' value='next'></a>
           <% } %>
           <% if(playlists[i].videos[j].title == playlists[i].videos[playlists[i].videos.length - 1].title){ %>
             <a href="/courses/<%= playlistTitle %>/<%= playlists[i].videos[j - 1].title.replace(/[, ]/g,'')%>"><input class='btn btn-lg btn-primary' type='button' value='previous'></a>
