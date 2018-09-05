@@ -214,7 +214,8 @@ margin: 0 auto;
 
 /* default height */
 #ad {
-   display: block;
+   display: inline-block;
+   position: absolute;
    height:60px;
 }
 @media only screen and (height:90px) {
