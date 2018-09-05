@@ -100,8 +100,8 @@ li {
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
+  padding: 10px;
+  font-size: 20px;
   width: 60px;
   text-align: center;
   text-decoration: none;
@@ -149,11 +149,6 @@ li {
   float:right;
 }
 
-.socialDiv {
-  padding: 1 1;
-  width:90%;
-  height:auto;
-}
 
 .intrinsic-container {
   position: relative;
