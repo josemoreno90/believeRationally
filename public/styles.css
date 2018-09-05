@@ -107,11 +107,11 @@ li {
 .fa {
   padding: 20px;
   font-size: 1em;
-  width: 6%;
+  width: 4%;
   height:auto;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 3px 1px;
 }
 
 .fa:hover {
