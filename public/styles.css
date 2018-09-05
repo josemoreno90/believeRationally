@@ -216,17 +216,20 @@ margin: 0 auto;
 
 /* default height */
 #ad {
+  text-align:center;
    height:60px;
 }
 @media only screen and (height:90px) {
    /* 90 pixels high */
    #ad {
+     text-align:center;
       height:90px;
    }
 }
 @media only screen and (height:125px) {
    /* 125 pixels high */
    #ad {
+     text-align:center;     
       height:125px;
    }
 }
