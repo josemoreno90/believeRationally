@@ -65,7 +65,7 @@ p {
 
 a {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .anchorHot {
@@ -104,8 +104,8 @@ li {
 }
 
 .fa {
-  padding: 5px;
-  width: 50px;
+  padding: 1px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
 }
