@@ -105,13 +105,13 @@ li {
 }
 
 .fa {
-  padding: 20px;
+  padding: 2px;
   font-size: 1em;
   width: 50%;
   height:auto;
   text-align: center;
   text-decoration: none;
-  margin: 3px 1px;
+  margin: 0 auto;
 }
 
 .fa:hover {
