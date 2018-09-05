@@ -99,12 +99,7 @@ li {
   font-size: 1.85em;
 }
 
-.container {
-  width: 100%;
-}
-
 .fa {
-  padding: 1px;
   text-align: center;
   text-decoration: none;
 }
@@ -201,8 +196,4 @@ margin: 0 auto;
   padding: 20px;
   font-family: Oswald;
   font-size: 4rem;
-}
-
-.container {
-  margin: auto 0;
 }
