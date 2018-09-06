@@ -64,6 +64,7 @@ p {
 }
 
 a {
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -99,8 +100,8 @@ li {
 }
 
 .fa {
-  font-size: 14px !important;
-  width: 60px;
+  font-size: 24px !important;
+  width: 40px;
   text-align: center;
   text-decoration: none;
 }
