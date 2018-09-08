@@ -69,13 +69,13 @@ a {
 }
 
 .anchorHot {
-  font-size: 1.6em;
+  font-size: 24px;
   color: #ff69b4;
 }
 
 
 .playlistDiv {
-  font-size: 18px;
+  font-size: 20px;
   padding: 1.5% 1.5%;
   width:100%;
   height:auto;
@@ -83,7 +83,7 @@ a {
 }
 
 .descriptionText {
-  font-size: 2rem;
+  font-size: 22px;
 }
 
 .videoTitle {
