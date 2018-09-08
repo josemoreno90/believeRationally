@@ -45,7 +45,7 @@ section {
 
 h1 {
   font-size: 3em;
-  display: table;
+  display: block;
   color: white;
   font-weight: 300;
   color: lime;
@@ -75,7 +75,7 @@ a {
 
 
 .playlistDiv {
-  display:block;
+  display:table;
   font-size: 22px;
   padding: 1% 1.5%;
   width:100%;
