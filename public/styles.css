@@ -64,11 +64,12 @@ p {
 }
 
 a {
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
 .anchorHot {
+  font-size: 1.6em;
   color: #ff69b4;
 }
 
@@ -113,6 +114,11 @@ li {
 .fa-facebook {
   background: #3B5998;
   color: white;
+}
+
+.fa-book {
+  font-size: 1em !important;
+  padding-right:50px !important;
 }
 
 .fa-twitter {
