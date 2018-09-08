@@ -75,8 +75,9 @@ a {
 
 
 .playlistDiv {
+  display:block;
   font-size: 22px;
-  padding: 10px 12px;
+  padding: 2% 1.5%;
   width:100%;
   height:auto;
   /*border: dashed 1.1px red;*/
