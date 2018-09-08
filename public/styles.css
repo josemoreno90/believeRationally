@@ -10,7 +10,7 @@ body {
 section {
   width: 100%;
   padding: 0 2%;
-  /* display: table; */
+  display: table;
   margin: -3% 0%;
   max-width: none;
   background-color: #373B44;
@@ -45,7 +45,7 @@ section {
 
 h1 {
   font-size: 3em;
-  display: block;
+  display: table;
   color: white;
   font-weight: 300;
   color: lime;
