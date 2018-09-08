@@ -75,7 +75,9 @@ a {
 
 
 .playlistDiv {
+  display:table;
   font-size: 22px;
+  padding: 20px 0px 50px 0px;
   width:100%;
   height:auto;
   /*border: dashed 1.1px red;*/
@@ -205,7 +207,8 @@ margin: 0 auto;
 }
 
 .mainPages {
-  display: block;
+  float: right;
+  display: table;
   margin: 0 auto;
 
 }
