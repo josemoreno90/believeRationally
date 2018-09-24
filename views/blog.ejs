@@ -1,0 +1,338 @@
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+  background: black;
+  color:black;
+}
+
+hr {
+  background:#dedede;
+  border:0;
+  height:1px;
+}
+
+.header {
+  overflow: hidden;
+  display:block;
+  position:fixed;
+  top:0;
+  margin:0;
+  width:100%;
+  height:4px;
+  text-align:center;
+}
+
+.header ul {
+  margin:0;
+  padding:0;
+}
+
+.header ul li {
+  overflow:hidden;
+  display:block;
+  float:left;
+  width:20%;
+  height:4px;
+}
+
+.header .cor-1 {
+  background:#f1c40f;
+}
+
+.header .cor-2 {
+  background:#e67e22;
+}
+
+.header .cor-3 {
+  background:#e74c3c;
+}
+
+.header .cor-4 {
+  background:#9b59b6;
+}
+
+.header .cor-5 {
+  background-color: hsla(10,40%,50%,1);
+}
+
+.wrap {
+  width: 950px;
+  margin:25px auto;
+}
+
+nav.menu ul {
+  overflow:hidden;
+  float:left;
+  width: 650px;
+  padding:0;
+  margin:0 0 0;
+  list-style: none;
+  color:#fff;
+  background: #1abc9c;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+
+nav.menu ul li {
+  float:left;
+  margin:0;
+}
+
+nav.menu ul a {
+  display:block;
+  padding:25px;
+  font-size: 16px;
+  font-weight:600;
+  text-transform: uppercase;
+  color:#fff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+nav.menu ul a:hover {
+  background:#16a085;
+  text-decoration: underline;
+}
+
+.sidebar {
+  width:275px;
+  float:right;
+}
+
+.sidebar .widget {
+  margin:0 0 25px;
+  padding:25px;
+  background:#fff;
+  transition: all 0.5s ease;
+  border-bottom: 2px solid #fff;
+}
+
+.sidebar .widget:hover {
+  border-bottom: 2px solid #3498db;
+}
+
+.sidebar .widget h2 {
+  margin:0 0 15px;
+  padding:0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight:800;
+  color:#3498db;
+}
+
+.sidebar .widget p {
+  font-size: 14px;
+}
+
+.sidebar .widget p:last-child {
+  margin:0;
+}
+
+.blog {
+  float:left;
+}
+
+.conteudo {
+  width:600px;
+  margin:25px auto;
+  padding:25px;
+  background: #fff;
+  border:1px solid #dedede;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+  box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+}
+
+.conteudo img {
+  margin:0 0 25px -25px;
+  max-width: 650px;
+  min-width: 650px;
+}
+
+.conteudo h1 {
+  margin:0 0 15px;
+  padding:0;
+  font-family: Georgia;
+  font-weight: normal;
+  color: #666;
+}
+
+.conteudo p:last-child {
+  margin: 0;
+}
+
+.conteudo .continue-lendo {
+  color:#000;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.conteudo .continue-lendo:hover {
+  margin-left:10px;
+}
+
+.post-info {
+  float: right;
+  margin: -10px 0 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+
+  .header {
+  position:inherit;
+}
+
+.wrap {
+  width: 90%;
+  margin:25px auto;
+}
+.sidebar {
+  width:100%;
+  float:right;
+    margin:25px 0 0;
+}
+
+ .sidebar .widget {
+  padding:5%;
+}
+
+  nav.menu ul {
+  width: 100%;
+}
+
+    nav.menu ul {
+  float:inherit;
+}
+
+  nav.menu ul li {
+  float:inherit;
+  margin:0;
+}
+
+nav.menu ul a {
+  padding:15px;
+  font-size: 16px;
+  border-bottom:1px solid #16a085;
+  border-top:1px solid #1abf9f;
+}
+
+.blog {
+  width:90%;
+}
+
+.conteudo {
+  float:inherit;
+  width:101%;
+  padding:5%;
+  margin:0 auto 25px;
+  background: #fff;
+  border:1px solid #dedede;
+}
+
+.conteudo img {
+  margin:0 0 25px -5%;
+  max-width: 110%;
+  min-width: 110%;
+}
+
+    .conteudo .continue-lendo:hover {
+  margin-left:0;
+}
+
+
+}
+
+@media screen and (max-width: 460px) {
+
+  nav.menu ul a {
+  padding:15px;
+  font-size: 14px;
+}
+
+.sidebar {
+  display:none
+}
+  .post-info {
+  display:none;
+}
+
+  .conteudo {
+  margin:25px auto;
+  }
+
+  .conteudo img {
+  margin:-5% 0 25px -5%;
+}
+
+
+}
+</style>
+
+<header class="header">
+  <ul>
+    <li class="cor-1"></li>
+    <li class="cor-2"></li>
+    <li class="cor-3"></li>
+    <li class="cor-4"></li>
+    <li class="cor-5"></li>
+  </ul>
+  </header>
+<div class="wrap">
+
+
+<nav class="menu">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/courses">Courses</a>
+    </li>
+    <li>
+      <a href="/about">About</a>
+    </li>
+  </ul>
+  </nav>
+    <aside class="sidebar">
+    <div class="widget">
+      <h2>Jose</h2>
+      <p>Hello, my name’s Jose. I’m 28 years old. I live in the Central Valley of California. (USA). I work as a Web Designer, Developer and Marketer.<br> morenojr90@gmail.com</p>
+      </div>
+      <div class="widget">
+      <h2>freeCodeCamp Courses</h2>
+      <p><a href="https://wewillcode.com/courses/freeCodeCamp2018">freeCodeCamp Basic HTML & CSS</a></p>
+      <p><a href="https://wewillcode.com/courses/BasicJavascriptonfreeCodeCamp">freeCodeCamp Basic Javascript</a></p>
+      </div>
+      <div class="widget">
+      <h2>Codecademy Courses</h2>
+      <p><a href="https://wewillcode.com/courses/LearnHTML&CSSIn2Hours&CSSFrameworkBootstrap">Make A Website</a></p>
+      <p><a href="https://wewillcode.com/courses/LearnResponsiveDesignCodecademyWebDevTutorials">Learn Responsive Design</a></p>
+
+      </div>
+  </aside>
+    <div class="blog">
+  <div class="conteudo">
+    <div class="post-info">
+      Posted by Jose Moreno
+    </div>
+    <img alt="Question app in Nodejs, picture of a man with eyes on fire with excitement to be coding the backend of a nodejs application running on a server with express and Pug templating" src="/images/questionApp.png">
+    <h1> Question App with Nodejs, Templating with Pug (formally known as Jade) </h1>
+    <hr>
+    <p>
+      In this beautiful code along we will look at creating a question type app.  It will be rather basic and is primarilly created to introduce beginners to back-end programming.  We will start from scratch and connect our app to a local server.
+    </p>
+     <p>
+       In this course we will look at concepts like redirecting a user through the use of cookies.  We learn about the importance of saving state in our application
+    </p>
+    <a href="https://wewillcode.com/courses/QuestionAppNodejsExpressPugTemplating" class="continue-lendo">Read more →</a>
+  </div>
+  </div>
+</div>
