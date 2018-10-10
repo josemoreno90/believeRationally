@@ -1,0 +1,71 @@
+<% include partials/coursesHeader %>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.col-container {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.col {
+    display: table-cell;
+    padding: 16px;
+    margin:10px;
+}
+
+h6 {
+  color:#FF69B4 !important;
+  font-size: 2.2rem;
+  font-weight:bolder;
+}
+
+@media only screen and (max-width: 600px) {
+    .col {
+        display: block;
+        width: 100%;
+    }
+}
+img {
+  width:100%;
+  max-width:350px;
+  height:auto;
+}
+</style>
+
+<div>
+  <h1 style="padding: 18px;">freeCodeCamp Walk-Throughs</h1>
+
+
+  <h2 style="text-align:center;">freeCodeCamp Tutorials</h2>
+  <p style="text-align:center;padding:20px;">Learning to code should be explained... at least thats what I believe, and in this section I attempt to do just that. See me explain my logic as I go through freeCodeCamp courses. Some are older videos but if you require help in any video, make sure to comment through youtube and I will attempt to respond as quickly as possible.</p>
+</div>
+<div class="col-container">
+  <div class="col" style="background:	#1F4F4F">
+    <a href="https://wewillcode.com/courses/freeCodeCamp2018"><p>Basic HTML & CSS</p></a>
+    <a href="https://wewillcode.com/courses/freeCodeCamp2018"><img src="/images/htmlandcss.png"/></a>
+    <h6>This is the perfect place to start if you are brand new to coding.  If you have never coded a day in your life, freeCodeCamp's HTML and CSS section are the place for you to get your feet wet and start coding today.  Wrap up video in the end to tie it all together. HTML and CSS are the visual aspects, JS is the behavior.</h6>
+  </div>
+
+  <div class="col" style="background:	#1F4F4F;">
+    <a href="https://wewillcode.com/courses/BasicJavascriptonfreeCodeCamp"><p>Basic Javascript<p></a>
+    <a href='https://wewillcode.com/courses/BasicJavascriptonfreeCodeCamp'><img src="/images/BasicJavascript.png"/></a>
+    <h6>Once you have completed the HTML and CSS section you can truly begin to explore javascript.  Understanding HTML and CSS will help you get manipulating the DOM even easier once you complete this course, putting it all together will be a lot easier.  Once we learn the syntax, we can begin to use JS to manipulate the DOM.</h6>
+  </div>
+
+  <div class="col" style="background:	#1F4F4F">
+    <a href="https://wewillcode.com/courses/freeCodeCamp'sAppliedVisualDesignCourse"><p>Applied Visual Design</p></a>
+    <a href="https://wewillcode.com/courses/freeCodeCamp'sAppliedVisualDesignCourse"><img src="/images/appliedVisualDesign.png"/></a>
+    <h6>Once you have finished the HTML, CSS, and Javascript section, you can take a look at the Visual Design aspect of Web Development.  Understanding design can help you better target your audience and speak to them through every element you put on the page.  Learn more advanced CSS concepts.</h6>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<% include partials/footer %>

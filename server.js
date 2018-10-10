@@ -57,6 +57,11 @@ app.get('/courses/:playlistTitle/:videoTitle', (req,res) => {
 app.get('/about', (req,res) => {
   res.render("about")
 })
+
+app.get('/freeCodeCamp', (req, res) => {
+  res.render("freeCodeCamp")
+})
+
 //
 // app.get('/sold-out', (req,res) => {
 //   const goBack = function() {
