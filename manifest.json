@@ -1,0 +1,16 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "We Will Code",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://wewillcode.com/",
+    "short_name": "We-Will-Code",
+    "theme_color": "transparent",
+    "description": "A coding site that believe all should say We Will Code.  Tutorials from sites such as freeCodeCamp and Codecademy, with extra projects and challenges.",
+    "orientation": "natural",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": []
+}
