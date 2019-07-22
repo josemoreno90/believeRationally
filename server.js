@@ -48,7 +48,7 @@ app.get('/courses/:playlistTitle/:videoTitle', (req,res) => {
 })
 
 app.get('/.well-known/brave-rewards-verification.txt', (req,res) => {
-    res.render('brave-rewards-verification.txt')
+    res.render('brave-rewards-verification')
 })
 
 
