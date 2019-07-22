@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: wewillcode.com
+Token: ce67397a3c29a227c36cd49f41bbb9779296f6d36209444cb4d1b901d4b1eb77
