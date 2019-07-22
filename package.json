@@ -15,6 +15,10 @@
   "bugs": {
     "url": "https://github.com/josemoreno90/believeRationally/issues"
   },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "homepage": "https://github.com/josemoreno90/believeRationally#readme",
   "dependencies": {
     "bcrypt": "^1.0.3",
