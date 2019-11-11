@@ -21,11 +21,10 @@ module.exports = {
             playlistId: globalPlaylists.items[index].id,
             title: globalPlaylists.items[index].snippet.title,
             description: globalPlaylists.items[index].snippet.description,
-            thumbnail: globalPlaylists.items[index].snippet.thumbnails.high.url,
+            thumbnail: globalPlaylists.items[index].snippet.thumbnails.medium.url,
             videos: playlistVids.map((video) => ({
               videoId: video.id ,
               description: video.description,
-              thumbnail: video.thumbnails.high.url,
               title: video.title
 
             }))
