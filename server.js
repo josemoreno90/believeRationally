@@ -63,6 +63,13 @@ app.get('/about', (req,res) => {
   res.render("about")
 })
 
+
+app.get('/ads', (req,res) => {
+  res.render("ads")
+})
+
+
+
 app.get('/freeCodeCamp', (req, res) => {
   res.render("freeCodeCamp")
 })
