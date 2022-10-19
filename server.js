@@ -64,7 +64,7 @@ app.get('/about', (req,res) => {
 })
 
 
-app.get('/ads', (req,res) => {
+app.get('/ads.txt', (req,res) => {
   res.render("ads")
 })
 
@@ -74,17 +74,6 @@ app.get('/freeCodeCamp', (req, res) => {
   res.render("freeCodeCamp")
 })
 
-//
-// app.get('/sold-out', (req,res) => {
-//   const goBack = function() {
-//     window.history.back();
-//   }
-//   res.send("<h2>Sorry This item is sold out!</h2><a href='https://shrouded-bayou-12615.herokuapp.com/shop'><button>Back to Shop Page</button></a> ")
-// })
-//
-// app.get('/order-success', (req,res) => {
-//   res.send("<h2>Your order was successfull</h2><a href='https://shrouded-bayou-12615.herokuapp.com/#about'><button>To courses page</button></a>")
-// })
 
 app.get('/google4804797dbfb80ca3.html', (req,res) => {
   res.render('google4804797dbfb80ca3.ejs')
@@ -94,6 +83,6 @@ app.get('/google4804797dbfb80ca3.html', (req,res) => {
 
 
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(process.env.PORT || 7200, () => {
   console.log('We Hear You!')
 })
