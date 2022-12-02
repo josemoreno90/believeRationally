@@ -29,6 +29,6 @@
     "jsdom": "^11.3.0",
     "simple-youtube-api": "^3.0.1",
     "sitemap": "^1.13.0",
-    "youtube-api": "^2.0.9"
+    "youtube-api": "^3.0.1"
   }
 }
