@@ -25,7 +25,7 @@
     "express": "^4.16.2",
     "express-sitemap": "^1.8.0",
     "heroku-ssl-redirect": "0.0.4",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "jsdom": "^11.3.0",
     "simple-youtube-api": "^3.0.1",
     "sitemap": "^1.13.0",
